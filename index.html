@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time to Take a Break</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+
+    <!-- Custom styles for this template -->
+    <link href="public/css/styles.css" rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        #fg,
+        #bg {
+            background-image: url("images/BG-72.jpg");
+
+            height: 100%;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="bg">
+
+    </section>
+    <section id="fg">
+
+    </section>
+    <div class="buttons">
+        <a id="logo" href="#">TaB</a>
+        <div class="dropdown">
+            <button class='dropbtn' onclick="donate()">DONATE</button>
+            <div id="myDropdown" class="dropdown-content">
+                <p>BTC: bc1q96mz4v67nj9ek5y2s38k0c8rpnq0l5x5mywqgu</p>
+                <p>DOGE: DMBi2ntV1PZ87adkmw6g8u476boZXi1YZB</p>
+            </div>
+        </div>
+        <button class="time-button extend-5" onclick="addFive()">Add 5 Minutes</button>
+        <div id="timer"></div>
+        <div class="audio">
+            <audio controls loop="true" style="width: 120px;">
+                <source src="/Users/nickcavaliere/Desktop/Take-A-Break/public/sounds/chill_music1.mp3"
+                    type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="heading">
+            <h2 id="title">Take a Break, You Earned It</h2>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="fader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+function changeBg() {
+    const images = [
+        'url("images/BG-1.jpg")',
+        'url("images/BG-2.jpg")',
+        'url("images/BG-3.jpg")',
+        'url("images/BG-4.jpg")',
+        'url("images/BG-5.jpg")',
+        'url("images/BG-6.jpg")',
+        'url("images/BG-7.jpg")',
+        'url("images/BG-8.jpg")',
+        'url("images/BG-9.jpg")',
+        'url("images/BG-10.jpg")',
+        'url("images/BG-11.jpg")',
+        'url("images/BG-12.jpg")',
+        'url("images/BG-13.jpg")',
+        'url("images/BG-14.jpg")',
+        'url("images/BG-15.jpg")',
+        'url("images/BG-16.jpg")',
+        'url("images/BG-17.jpg")',
+        'url("images/BG-18.jpg")',
+        'url("images/BG-19.jpg")',
+        'url("images/BG-20.jpg")',
+        'url("images/BG-21.jpg")',
+        'url("images/BG-22.jpg")',
+        'url("images/BG-23.jpg")',
+        'url("images/BG-24.jpg")',
+        'url("images/BG-25.jpg")',
+        'url("images/BG-26.jpg")',
+        'url("images/BG-27.jpg")',
+        'url("images/BG-28.jpg")',
+        'url("images/BG-29.jpg")',
+        'url("images/BG-30.jpg")',
+        'url("images/BG-31.jpg")',
+        'url("images/BG-32.jpg")',
+        'url("images/BG-33.jpg")',
+        'url("images/BG-34.jpg")',
+        'url("images/BG-35.jpg")',
+        'url("images/BG-36.jpg")',
+        'url("images/BG-37.jpg")',
+        'url("images/BG-38.jpg")',
+        'url("images/BG-39.jpg")',
+        'url("images/BG-40.jpg")',
+        'url("images/BG-41.jpg")',
+        'url("images/BG-42.jpg")',
+        'url("images/BG-43.jpg")',
+        'url("images/BG-44.jpg")',
+        'url("images/BG-45.jpg")',
+        'url("images/BG-46.jpg")',
+        'url("images/BG-47.jpg")',
+        'url("images/BG-48.jpg")',
+        'url("images/BG-49.jpg")',
+        'url("images/BG-50.jpg")',
+        'url("images/BG-51.jpg")',
+        'url("images/BG-52.jpg")',
+        'url("images/BG-53.jpg")',
+        'url("images/BG-54.jpg")',
+        'url("images/BG-55.jpg")',
+        'url("images/BG-56.jpg")',
+        'url("images/BG-57.jpg")',
+        'url("images/BG-58.jpg")',
+        'url("images/BG-59.jpg")',
+        'url("images/BG-60.jpg")',
+        'url("images/BG-61.jpg")',
+        'url("images/BG-62.jpg")',
+        'url("images/BG-63.jpg")',
+        'url("images/BG-64.jpg")',
+        'url("images/BG-65.jpg")',
+        'url("images/BG-66.jpg")',
+        'url("images/BG-67.jpg")',
+        'url("images/BG-68.jpg")',
+        'url("images/BG-69.jpg")',
+        'url("images/BG-70.jpg")',
+        'url("images/BG-71.jpg")',
+        'url("images/BG-72.jpg")',
+    ]
+
+    const back = document.getElementById("bg");
+    const front = document.getElementById("fg");
+    const bg = images[Math.floor(Math.random() * images.length)];
+    back.style.backgroundImage = bg;
+    front.classList.add("hide");
+    const fader = front.addEventListener("transitionend", function () {
+        front.style.backgroundImage = bg;
+        front.classList.remove("hide");
+        front.removeEventListener("transitionend", fader);
+    });
+}
+setInterval(changeBg, 30000)
