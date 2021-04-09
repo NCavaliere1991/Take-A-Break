@@ -11,14 +11,14 @@ body {
 #logo {
     margin: 10px;
     text-decoration: none;
-    color: rgb(190, 190, 190);
+    color: #7738DE;
     font-size: 2rem;
 }
 
 #title {
     margin-top: 20px;
     margin-left: 285px;
-    color: rgb(187, 187, 187)
+    color: goldenrod;
 }
 
 .audio {
@@ -32,7 +32,7 @@ body {
     font-weight: bold;
     margin-right: 20px; 
     margin-top: 10px;
-    color: rgb(160, 158, 158);
+    color: goldenrod;
 }
 
 
@@ -94,7 +94,7 @@ body {
     border-radius: 10px;
     padding: 1em 1em;
     font-size: 1em;
-    color: grey;
+    color: goldenrod;
     border: 1px solid;
 }
 
@@ -175,4 +175,3 @@ body {
         margin-top: 10px;
     }
 }
-
