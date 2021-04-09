@@ -25,7 +25,7 @@ function countdown() {
 
 function addFive() {
     time += (5 * 60);
-    title.innerHTML = "Take a Break, You Earned It"
+    title.innerHTML = "Want to Take a Break? You Deserve It"
     if (timer.innerHTML === "0:00") {
         myInterval = setInterval(countdown, 1000);
         countdown();
