@@ -2,7 +2,6 @@
 body {
     padding: 0;
     margin: 0;
-    background-size: cover;
     text-align: center;
     color: white;
     font-family: 'Abel', sans-serif;
@@ -33,6 +32,11 @@ body {
     margin-right: 20px; 
     margin-top: 10px;
     color: goldenrod;
+}
+
+#insta {
+    font-size: 1.5rem;
+    margin-left: 475px;
 }
 
 
@@ -175,3 +179,4 @@ body {
         margin-top: 10px;
     }
 }
+
