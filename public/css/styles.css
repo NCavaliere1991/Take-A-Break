@@ -36,7 +36,7 @@ body {
 
 #insta {
     font-size: 1.5rem;
-    margin-left: 475px;
+    margin-left: 400px;
 }
 
 
@@ -128,12 +128,18 @@ body {
     #title {
         align-items: center;
     }
+
+    #insta {
+        margin: auto;
+    }
 }
 
 @media (max-width: 1291px) {
     .buttons {
         flex-direction: column;
         align-items: center;
+        background: rgba(0,0,0,0);
+        backdrop-filter: blur(0);
     }
 
     #title {
@@ -143,6 +149,11 @@ body {
 
     #timer {
         margin: auto; 
+        margin-top: 10px;
+    }
+
+    #insta {
+        margin: auto;
         margin-top: 10px;
     }
 
@@ -165,6 +176,11 @@ body {
 
     #timer {
         margin: auto; 
+        margin-top: 10px;
+    }
+
+    #insta {
+        margin: auto;
         margin-top: 10px;
     }
 }
